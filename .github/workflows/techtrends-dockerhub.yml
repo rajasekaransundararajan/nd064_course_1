@@ -1,4 +1,4 @@
-name: TechTrends - Package with Docker enabled
+name: TechTrends - Package with Docker
 
 on:
   push:
@@ -28,7 +28,8 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: .
-          file: ./Project/Dockerfile
+          context: ./Project
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: rajasekaransundararajan/techtrends:latest
