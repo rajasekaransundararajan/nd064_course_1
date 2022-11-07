@@ -1,6 +1,6 @@
 FROM python:3.8
 LABEL maintainer="Rajasekaran Sundararajan"
-DIR
+ls
 COPY . /app
 WORKDIR /app/techtrends
 RUN pip install -r requirements.txt
