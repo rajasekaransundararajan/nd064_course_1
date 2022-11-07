@@ -2,10 +2,9 @@ FROM python:3.8
 LABEL maintainer="Rajasekaran Sundararajan"
 # See everything (in a linux container)...
 RUN dir -s    
-# OR See everything (in a windows container)...
-RUN dir /s
 COPY . /app
 WORKDIR /app/techtrends
+COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r requirements.txt
 
 # command to run on container start
