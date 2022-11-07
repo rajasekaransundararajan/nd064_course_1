@@ -3,7 +3,6 @@ LABEL maintainer="Rajasekaran Sundararajan"
 # See everything (in a linux container)...
 RUN dir -s    
 COPY . /app
-COPY requirements.txt /tmp/requirements.txt
 WORKDIR /app/techtrends
 
 RUN pip install -r requirements.txt
