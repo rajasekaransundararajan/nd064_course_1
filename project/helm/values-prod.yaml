@@ -6,6 +6,8 @@ service:
   type: ClusterIP
 
 image:
+  repository: techtrends 
+  tag: latest
   pullPolicy: Always
 
 replicaCount: 5
