@@ -24,7 +24,7 @@ spec:
         tag: latest
     spec:
       containers:
-      - image: techtrends:latest
+      - image: rajasekaransundararajan/techtrends:latest
         imagePullPolicy: IfNotPresent
         name: techtrends-latest
         ports:

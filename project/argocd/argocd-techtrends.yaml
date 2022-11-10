@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: techtrends 
+  namespace: argocd
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: project\argocd\Templates
+    repoURL: https://github.com/rajasekaransundararajan/nd064_course_1
+    targetRevision: HEAD
+  syncPolicy: {}
