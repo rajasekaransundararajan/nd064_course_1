@@ -1,7 +1,6 @@
 FROM python:3.8
 LABEL maintainer="Rajasekaran Sundararajan"
-# See everything (in a linux container)...
-RUN dir -s    
+   
 COPY . /app
 WORKDIR /app/techtrends
 
